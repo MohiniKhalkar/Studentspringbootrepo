@@ -50,4 +50,9 @@ public ResponseEntity<Optional<Student>> getDataById(@PathVariable long studId){
             return "WELCOME TO CSI";
 
 }
+//creating API for msg
+@GetMapping("/say")
+    public String hello(){
+        return "Full Stack";
+}
 }
